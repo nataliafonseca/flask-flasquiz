@@ -1,0 +1,98 @@
+[
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What does CPU stand for?",
+    "correct_answer": "Central Processing Unit",
+    "incorrect_answers": [
+      "Central Process Unit",
+      "Computer Personal Unit",
+      "Central Processor Unit"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+    "correct_answer": "1000",
+    "incorrect_answers": ["512", "1024", "500"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What does GHz stand for?",
+    "correct_answer": "Gigahertz",
+    "incorrect_answers": ["Gigahotz", "Gigahetz", "Gigahatz"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "HTML is what type of language?",
+    "correct_answer": "Markup Language",
+    "incorrect_answers": [
+      "Macro Language",
+      "Programming Language",
+      "Scripting Language"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which computer hardware device provides an interface for all other connected devices to communicate?",
+    "correct_answer": "Motherboard",
+    "incorrect_answers": [
+      "Central Processing Unit",
+      "Hard Disk Drive",
+      "Random Access Memory"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In web design, what does CSS stand for?",
+    "correct_answer": "Cascading Style Sheet",
+    "incorrect_answers": [
+      "Counter Strike: Source",
+      "Corrective Style Sheet",
+      "Computer Style Sheet"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the code name for the mobile operating system Android 7.0?",
+    "correct_answer": "Nougat",
+    "incorrect_answers": ["Ice Cream Sandwich", "Jelly Bean", "Marshmallow"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many kilobytes in one gigabyte (in decimal)?",
+    "correct_answer": "1000000",
+    "incorrect_answers": ["1024", "1000", "1048576"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The C programming language was created by this American computer scientist. ",
+    "correct_answer": "Dennis Ritchie",
+    "incorrect_answers": ["Tim Berners Lee", "al-Khwārizmī", "Willis Ware"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What language does Node.js use?",
+    "correct_answer": "JavaScript",
+    "incorrect_answers": ["Java", "Java Source", "Joomla Source Code"]
+  }
+]
