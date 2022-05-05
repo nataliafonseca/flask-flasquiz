@@ -6,7 +6,7 @@ from random import shuffle
 
 @app.route("/")
 def index():
-    with open("quiz.json") as json_file:
+    with open("quiz.json", encoding="utf-8") as json_file:
         quiz = json.load(json_file)
         for entry in quiz:
             entry["all_answers"] = entry.get("incorrect_answers")
