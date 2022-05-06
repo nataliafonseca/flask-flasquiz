@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="content">
+
+    <div class="mb-3">
+      Olá, {{ name }} <br>
+      Seu resultado foi: {{score}} / 10
+    </div>
+
+    {% for question in quiz %}
+    {% set outer_loop = loop %}
+
+    <h2>{{question.question}}</h2>
+    {% if score_list[outer_loop.index - 1] %}
+    <span>Parabéns, você acertou</span>
+    {% else %}
+    <span>Que pena, você errou</span>
+    {% endif %}
+
+    {% for value in question.get("all_answers") %}
+    <div class="form-check">
+      <span>
+        {{ value }}
+      </span>
+    </div>
+    {% endfor %}
+
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

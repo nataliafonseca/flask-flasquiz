@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="content">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Posição</th>
+          <th>Nome</th>
+          <th>Score</th>
+          <th>Data/Hora</th>
+        </tr>
+      </thead>
+      {% for score in scoreboard %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ score.name }}</td>
+        <td>{{ score.score }}</td>
+        <td>{{ score.date }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}
