@@ -11,22 +11,26 @@
 
       {% for question in quiz %}
       {% set outer_loop = loop %}
+      <div class="question">
 
-      <h2>{{question.question}}</h2>
+        <h2>{{question.question}}</h2>
 
-      {% for value in question.get("all_answers") %}
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="question-{{ outer_loop.index }}"
-          id="q-{{ outer_loop.index }}-opt-{{ loop.index }}" value="{{ value }}" required>
-        <label class="form-check-label" for="q-{{ outer_loop.index }}-opt-{{ loop.index }}">
-          {{ value }}
-        </label>
+        {% for value in question.get("all_answers") %}
+        <div class="form-check mb-1">
+          <input class="form-check-input" type="radio" name="question-{{ outer_loop.index }}"
+            id="q-{{ outer_loop.index }}-opt-{{ loop.index }}" value="{{ value }}" required>
+          <label class="form-check-label" for="q-{{ outer_loop.index }}-opt-{{ loop.index }}">
+            {{ value }}
+          </label>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
 
       {% endfor %}
 
-      <button class="btn btn-primary" type="submit">Enviar</button>
+      <div class="d-grid gap-2 mt-4">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
     </form>
   </div>
 </div>

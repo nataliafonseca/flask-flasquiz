@@ -4,28 +4,54 @@
 <div class="container">
   <div class="content">
 
-    <div class="mb-3">
-      Olá, {{ name }} <br>
-      Seu resultado foi: {{score}} / 10
-    </div>
+    <p class="result mb-3">
+      Resultado:
+      <span class="result-score">
+        {{score}} / 10
+      </span>
+    </p>
 
     {% for question in quiz %}
     {% set outer_loop = loop %}
+    <div class="question">
 
-    <h2>{{question.question}}</h2>
-    {% if score_list[outer_loop.index - 1] %}
-    <span>Parabéns, você acertou</span>
-    {% else %}
-    <span>Que pena, você errou</span>
-    {% endif %}
+      <h2>{{question.question}}</h2>
 
-    {% for value in question.get("all_answers") %}
-    <div class="form-check">
-      <span>
-        {{ value }}
-      </span>
+
+      <div class="d-flex justify-content-between">
+        <div>
+          {% for value in question.get("all_answers") %}
+          <div class="form-check mb-1">
+            {% if value == question.get("correct_answer") %}
+            <span class="correct-answer"> {{ value }} </span>
+            {% else %}
+            <span> {{ value }} </span>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% if score_list[outer_loop.index - 1] %}
+        <svg xmlns="http://www.w3.org/2000/svg" class="result-icon success-icon ionicon" viewBox="0 0 512 512">
+          <title>Checkmark Circle</title>
+          <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none"
+            stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+            d="M352 176L217.6 336 160 272" />
+        </svg>
+        {% else %}
+        <svg xmlns="http://www.w3.org/2000/svg" class="result-icon error-icon ionicon" viewBox="0 0 512 512">
+          <title>Close Circle</title>
+          <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none"
+            stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+            d="M320 320L192 192M192 320l128-128" />
+        </svg>
+        {% endif %}
+      </div>
+
+
+
     </div>
-    {% endfor %}
 
     {% endfor %}
   </div>

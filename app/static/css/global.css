@@ -49,6 +49,7 @@ a.btn {
   padding-top: 4rem;
   min-height: 80vh;
   min-width: 100%;
+  margin-bottom: 20px;
 }
 
 .content {
@@ -62,19 +63,45 @@ a.btn {
   width: 90%;
 }
 
-.icon {
-  fill: #333333;
-  height: 30px;
-  width: 30px;
-  margin-left: 0.5rem;
-}
-
 .logo {
   font-weight: bold;
   font-size: large;
 }
 
-.content {
-  align-items: center;
-  justify-content: center;
+.question {
+  border-top: 1px solid lightgray;
+  padding: 20px;
+}
+
+.question h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.correct-answer {
+  color: #156420;
+  font-weight: bold;
+}
+
+.result-icon {
+  height: 5rem;
+  margin: 0;
+}
+
+.success-icon {
+  color: #156420;
+}
+
+.error-icon {
+  color: #a71414;
+}
+
+.result {
+  margin-left: auto;
+}
+
+.result-score {
+  font-weight: bold;
+  font-size: 2rem;
 }
