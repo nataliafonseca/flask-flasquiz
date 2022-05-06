@@ -8,6 +8,7 @@ authors = ["Natália Fonseca <nataliabf@outlook.com>"]
 python = "^3.10"
 Flask = "^2.1.2"
 Flask-SQLAlchemy = "^2.5.1"
+Flask-Migrate = "^3.1.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
